@@ -9,6 +9,19 @@ section {
 	text-align: center;
 }
 
+/* YOUTUBE VIDEO */
+iframe {
+	width: 1120px;
+	height: 630px;
+}
+
+@media (max-width: 40rem) {
+	iframe {
+		width: 320px;
+		height: 180px;
+	}
+}
+
 .project-title {
 	border-bottom: 2px solid #ffffff;
 	text-align: center;
@@ -50,6 +63,30 @@ section {
 	content: '\201D';
 }
 
+@media (max-width: 40rem) {
+	.project-title {
+		font-size: 1.5rem;
+	}
+
+	.project-description--main,
+	.project-pdf {
+		font-size: 1rem;
+	}
+
+	.project-description--main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: auto;
+	}
+
+	.project-description p {
+		font-size: 1rem !important;
+		margin: 0 1.3rem;
+		margin-top: 2rem !important;
+	}
+}
+
 /* DESIGN INTENTION */
 .design {
 	background: #343a40;
@@ -82,6 +119,25 @@ section {
 .design__intention h3 {
 	margin: 0.5rem 2rem;
 	font-weight: 400;
+}
+
+@media (max-width: 40rem) {
+	.design {
+		width: 100%;
+		display: block;
+	}
+
+	.design__intention--wrapper {
+		display: block;
+	}
+
+	.design__title {
+		font-size: 1.3rem;
+	}
+
+	.design__intention h3 {
+		margin: 1rem;
+	}
 }
 
 /* BUTTON */
@@ -128,6 +184,13 @@ section {
 
 	/* THIS creates the animation! */
 	transition: transform 1s;
+}
+
+@media (max-width: 40rem) {
+	.carousel,
+	.slide {
+		height: 15rem;
+	}
 }
 
 .slide > img {
