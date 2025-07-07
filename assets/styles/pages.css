@@ -1,0 +1,193 @@
+.link__active {
+	background: #000;
+	font-weight: 600;
+	padding: 0 1rem;
+	/* text-decoration: underline; */
+}
+
+section {
+	text-align: center;
+}
+
+.project-title {
+	border-bottom: 2px solid #ffffff;
+	text-align: center;
+	width: 50%;
+	margin: 2rem auto;
+}
+
+.project .img-project {
+	margin: 1rem 0;
+	width: 70rem;
+}
+
+.project-description--main {
+	display: flex;
+	justify-content: center;
+}
+
+.project-description--main span {
+	font-weight: 600;
+}
+
+.project-description--main h3 {
+	margin: 0 1rem;
+}
+
+.project .project-description p {
+	font-size: 1.2rem;
+	font-style: italic;
+	font-weight: 300;
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.project .project-description p::before {
+	content: '\201C';
+}
+
+.project .project-description p::after {
+	content: '\201D';
+}
+
+/* DESIGN INTENTION */
+.design {
+	background: #343a40;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 5rem;
+	margin: 2rem 0;
+}
+
+.design h1 {
+	font-size: 1.5rem;
+}
+
+.design__intention--wrapper {
+	display: flex;
+}
+
+.design__intention {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.design__intention img {
+	height: 3rem;
+	width: 3rem;
+}
+
+.design__intention h3 {
+	margin: 0.5rem 2rem;
+	font-weight: 400;
+}
+
+/* BUTTON */
+.project-pdf {
+	background: #fff;
+	border: none;
+	cursor: pointer;
+	color: #000;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 0.75rem 1.5rem;
+}
+
+.project-pdf:hover {
+	background: #000;
+	color: #fff;
+}
+
+.project a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* CAROUSEL */
+.carousel {
+	/* max-width: 100rem; */
+	/* margin: 0 auto; */
+	height: 40rem;
+	position: relative;
+
+	/* IN THE END */
+	overflow: hidden;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 40rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* THIS creates the animation! */
+	transition: transform 1s;
+}
+
+.slide > img {
+	/* Only for images that have different size than slide */
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel__btn {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+
+	border: none;
+	background: rgba(255, 255, 255, 0.7);
+	font-family: inherit;
+	color: #333;
+	border-radius: 50%;
+	height: 2rem;
+	width: 2rem;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.carousel__btn--left {
+	left: 6%;
+	transform: translate(-50%, -50%);
+}
+
+.carousel__btn--right {
+	right: 6%;
+	transform: translate(50%, -50%);
+}
+
+.dots {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.dots__dot {
+	border: none;
+	background-color: #b9b9b9;
+	opacity: 0.7;
+	height: 0.75rem;
+	width: 0.75rem;
+	border-radius: 50%;
+	margin-right: 1rem;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.dots__dot:last-child {
+	margin: 0;
+}
+
+.dots__dot--active {
+	background-color: #fff;
+	opacity: 1;
+}

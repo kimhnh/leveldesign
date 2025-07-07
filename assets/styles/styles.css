@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+}
+
+body {
+	background: #212529;
+	color: #fff;
+	font-family: 'Noto Sans KR', sans-serif;
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-rows: auto 1fr auto;
+	height: 100vh;
+	margin: 0;
+}
+
+/* GENERAL RULES */
+.link__hover {
+	color: inherit;
+	text-decoration: none;
+	padding: 0 1rem;
+}
+
+.link__hover:hover {
+	text-decoration: underline;
+}
+
+/* HEADER */
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header__title {
+	margin-bottom: 0;
+}
+
+.header__title:hover {
+	text-decoration: underline;
+}
+
+.header__title a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 1rem;
+}
+
+/* MAIN */
+main {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+/* IMAGE WRAPPER*/
+.img-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+/* IMAGE */
+.wrapper img {
+	margin: 1rem 0;
+	width: 50rem;
+}
+
+/* HOVER */
+.img-wrapper__title--hidden {
+	display: none;
+}
+
+.img-wrapper__title {
+	color: white;
+	background: black;
+	position: absolute;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	padding: 0.5rem;
+	text-align: center;
+	z-index: 1;
+}
+
+.img--dim {
+	background-color: #000;
+	opacity: 0.5;
+}
+
+/* FOOTER */
+footer {
+	display: flex;
+	justify-content: center;
+	font-size: 0.8rem;
+}
+
+h3 {
+	font-weight: 300;
+	margin: 2rem;
+}
+
+.footer__bold {
+	font-weight: 600;
+}
