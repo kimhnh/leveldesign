@@ -13,7 +13,7 @@ const ARPGMarkup = `
 				</div>
 				<h1 class="project-title">${projects[projectIndex].title}</h1>
 				<div class="project-description">
-					<div class="project-description--main">
+					<div class="project-description__wrapper">
 						<h3><span>장르</span> : ${projects[projectIndex].genre}</h3>
 						<h3><span>사이즈</span> : ${projects[projectIndex].size}</h3>
 						<h3><span>사용 툴</span> : ${projects[projectIndex].tools}</h3>
@@ -26,33 +26,33 @@ const ARPGMarkup = `
 					projects[projectIndex].urlToPDF
 				}" target="_blank">기획서 보기</a></button>
 				<div class="design">
-				<h1 class="design__title">기획 의도</h1>
-				<div class="design__intention--wrapper">
-					${projects[projectIndex].intentionsIcon
-						.map((el, i) => {
-							return `
-							<article class="design__intention">
-								<img src="${el}" alt="" />
-								<h3>${projects[projectIndex].intentions[i]}</h3>
-							</article>
-							`;
-						})
-						.join('')}
+					<h1 class="design__title">기획 의도</h1>
+					<div class="design__intention--wrapper">
+						${projects[projectIndex].intentionsIcon
+							.map((el, i) => {
+								return `
+								<article class="design__intention">
+									<img src="${el}" alt="" />
+									<h3>${projects[projectIndex].intentions[i]}</h3>
+								</article>
+								`;
+							})
+							.join('')}
+					</div>
 				</div>
-			</div>
-            <div class="carousel">
-               ${projects[projectIndex].carousel
+				<div class="carousel">
+				${projects[projectIndex].carousel
 					.map((el) => {
 						return `<div class="slide">
-					<img src="../assets/images/arpg_0${el}.png" alt="" class="slide__image" />
-				</div>`;
+						<img src="../assets/images/arpg_0${el}.png" alt="" class="slide__image" />
+					</div>`;
 					})
 					.join('')}
-				<button class="carousel__btn carousel__btn--left">&larr;</button>
-				<button class="carousel__btn carousel__btn--right">&rarr;</button>
-				<div class="dots"></div>
-			</div>
-			</section>
+					<button class="carousel__btn carousel__btn--left">&larr;</button>
+					<button class="carousel__btn carousel__btn--right">&rarr;</button>
+					<div class="dots"></div>
+				</div>
+</section>
 `;
 
 main.insertAdjacentHTML('afterbegin', ARPGMarkup);

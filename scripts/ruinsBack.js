@@ -13,7 +13,7 @@ const openWorldMarkup = `
 				</div>
 				<h1 class="project-title">${projects[projectIndex].title}</h1>
 				<div class="project-description">
-					<div class="project-description--main">
+					<div class="project-description__wrapper">
 						<h3><span>장르</span> : ${projects[projectIndex].genre}</h3>
 						<h3><span>사이즈</span> : ${projects[projectIndex].size}</h3>
 						<h3><span>사용 툴</span> : ${projects[projectIndex].tools}</h3>

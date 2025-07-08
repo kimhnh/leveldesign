@@ -1,53 +1,64 @@
+/* GENERAL RULES */
 .link__active {
 	background: #000;
 	font-weight: 600;
 	padding: 0 1rem;
-	/* text-decoration: underline; */
 }
 
+.project-description__wrapper h3,
+.design__intention h3,
+.project-pdf a {
+	font-size: 1rem;
+}
+
+/* PROJECT WRAPPER */
 section {
 	text-align: center;
 }
 
 /* YOUTUBE VIDEO */
-iframe {
-	width: 1120px;
-	height: 630px;
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
-@media (max-width: 40rem) {
-	iframe {
-		width: 320px;
-		height: 180px;
-	}
+.wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
 }
 
+/* TITLE */
 .project-title {
 	border-bottom: 2px solid #ffffff;
 	text-align: center;
 	width: 50%;
-	margin: 2rem auto;
+	margin: 1rem auto;
 }
 
-.project .img-project {
-	margin: 1rem 0;
-	width: 70rem;
-}
-
-.project-description--main {
+/* DESCRIPTION */
+.project-description__wrapper {
 	display: flex;
 	justify-content: center;
 }
 
-.project-description--main span {
+.project-description__wrapper span {
 	font-weight: 600;
 }
 
-.project-description--main h3 {
+.project-description__wrapper h3 {
+	font-weight: 300;
 	margin: 0 1rem;
 }
 
-.project .project-description p {
+/* ////////////////////////////////////////////// FONT-SIZE */
+.project-description p {
 	font-size: 1.2rem;
 	font-style: italic;
 	font-weight: 300;
@@ -63,17 +74,13 @@ iframe {
 	content: '\201D';
 }
 
-@media (max-width: 40rem) {
-	.project-title {
-		font-size: 1.5rem;
-	}
-
-	.project-description--main,
+@media screen and (max-width: 930px) {
+	.project-description__wrapper,
 	.project-pdf {
 		font-size: 1rem;
 	}
 
-	.project-description--main {
+	.project-description__wrapper {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -81,9 +88,8 @@ iframe {
 	}
 
 	.project-description p {
-		font-size: 1rem !important;
-		margin: 0 1.3rem;
-		margin-top: 2rem !important;
+		font-size: 1rem;
+		margin: 2rem 1rem;
 	}
 }
 
@@ -93,12 +99,13 @@ iframe {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1rem 5rem;
+	padding: 1rem 3rem;
 	margin: 2rem 0;
 }
 
-.design h1 {
-	font-size: 1.5rem;
+/* ////////////////////////////////////////////// FONT-SIZE */
+.design__title {
+	font-size: 1.3rem;
 }
 
 .design__intention--wrapper {
@@ -121,7 +128,7 @@ iframe {
 	font-weight: 400;
 }
 
-@media (max-width: 40rem) {
+@media screen and (max-width: 930px) {
 	.design {
 		width: 100%;
 		display: block;
@@ -146,7 +153,6 @@ iframe {
 	border: none;
 	cursor: pointer;
 	color: #000;
-	font-size: 1rem;
 	font-weight: 600;
 	padding: 0.75rem 1.5rem;
 }
@@ -163,12 +169,8 @@ iframe {
 
 /* CAROUSEL */
 .carousel {
-	/* max-width: 100rem; */
-	/* margin: 0 auto; */
-	height: 40rem;
+	height: 30rem;
 	position: relative;
-
-	/* IN THE END */
 	overflow: hidden;
 }
 
@@ -176,25 +178,21 @@ iframe {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 40rem;
-
+	height: 30rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-	/* THIS creates the animation! */
 	transition: transform 1s;
 }
 
-@media (max-width: 40rem) {
+@media screen and (max-width: 930px) {
 	.carousel,
 	.slide {
-		height: 15rem;
+		height: 22rem;
 	}
 }
 
 .slide > img {
-	/* Only for images that have different size than slide */
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -209,7 +207,6 @@ iframe {
 	background: rgba(255, 255, 255, 0.7);
 	font-family: inherit;
 	color: #333;
-	border-radius: 50%;
 	height: 2rem;
 	width: 2rem;
 	font-size: 1rem;
@@ -240,7 +237,6 @@ iframe {
 	opacity: 0.7;
 	height: 0.75rem;
 	width: 0.75rem;
-	border-radius: 50%;
 	margin-right: 1rem;
 	cursor: pointer;
 	transition: all 0.5s;
@@ -253,4 +249,16 @@ iframe {
 .dots__dot--active {
 	background-color: #fff;
 	opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+	.carousel__btn {
+		height: 1.5rem;
+		width: 1.5rem;
+		font-size: 0.5rem;
+	}
+
+	.dots__dot {
+		margin-right: 0.5rem;
+	}
 }
