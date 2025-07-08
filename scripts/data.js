@@ -6,7 +6,7 @@ export const projects = [
 		urlToVideo: 'q1hlPA6iXcs',
 		genre: '액션 ARPG',
 		size: '270m x 150m',
-		tools: 'Unreal 5',
+		tools: 'Unreal 5, DCS',
 		synposis:
 			'절벽으로 둘러싸인 마을을 해방하기 위해 세 개의 다리를 건너 적들과 맞서야 합니다.',
 		intentionsIcon: [

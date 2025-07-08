@@ -232,6 +232,13 @@ section {
 	}
 }
 
+@media screen and (max-width: 400px) {
+	.carousel,
+	.slide {
+		height: 16rem;
+	}
+}
+
 .slide > img {
 	width: 100%;
 	height: 100%;
