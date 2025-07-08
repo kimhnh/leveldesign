@@ -44,7 +44,7 @@ const ARPGMarkup = `
 				${projects[projectIndex].carousel
 					.map((el) => {
 						return `<div class="slide">
-						<img src="../assets/images/arpg_0${el}.png" alt="" class="slide__image" />
+						<img src="../assets/images/arpg_${el}.png" alt="" class="slide__image" />
 					</div>`;
 					})
 					.join('')}

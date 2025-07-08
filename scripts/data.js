@@ -16,7 +16,7 @@ export const projects = [
 			'../assets/svg/noun-chest-2060068.svg',
 		],
 		intentions: ['소울라이크 레벨 디자인', '랜드마크 프레이밍', '루프/지름길', '탐험 보상'],
-		carousel: [1, 2, 3, 4, 6, 7, 8, 9],
+		carousel: ['plan', '01', '02', '03', '04', '06', '07', '08', '09'],
 		urlToPDF:
 			'https://drive.google.com/file/d/1d8NUM2YSWoGXpnxUgzaW6MJcnAOVn6JT/view?usp=drive_link',
 	},
@@ -35,7 +35,7 @@ export const projects = [
 			'../assets/svg/dungeon-solid.svg',
 		],
 		intentions: ['엘든링 오픈월드 디자인', '자유로운 탐험', '퍼즐', '다양한 던전'],
-		carousel: [1, 2, 3, 4, 5, 6, 7, 8],
+		carousel: ['plan', '01', '02', '03', '04', '05', '06', '07', '08'],
 		urlToPDF:
 			'https://drive.google.com/file/d/1GWasyP2WHJb_XLnwNC12I7xb7qjnrCST/view?usp=drive_link',
 	},

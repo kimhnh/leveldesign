@@ -44,7 +44,7 @@ const openWorldMarkup = `
                ${projects[projectIndex].carousel
 					.map((el) => {
 						return `<div class="slide">
-					<img src="../assets/images/open_0${el}.png" alt="" class="slide__image" />
+					<img src="../assets/images/open_${el}.png" alt="" class="slide__image" />
 				</div>`;
 					})
 					.join('')}
