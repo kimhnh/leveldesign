@@ -16,7 +16,7 @@ export const projects = [
 			'../assets/svg/noun-chest-2060068.svg',
 		],
 		intentions: ['소울라이크 레벨 디자인', '랜드마크 프레이밍', '루프/지름길', '탐험 보상'],
-		carousel: ['plan', '01', '02', '03', '04', '06', '07', '08', '09'],
+		carousel: ['plan', 'zone', '01', '02', '03', '04', '06', '07', '08', '09'],
 		urlToPDF:
 			'https://drive.google.com/file/d/1d8NUM2YSWoGXpnxUgzaW6MJcnAOVn6JT/view?usp=drive_link',
 	},
