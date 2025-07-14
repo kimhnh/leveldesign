@@ -39,4 +39,28 @@ export const projects = [
 		urlToPDF:
 			'https://drive.google.com/file/d/1GWasyP2WHJb_XLnwNC12I7xb7qjnrCST/view?usp=drive_link',
 	},
+	{
+		title: 'Italian Consulate',
+		genre: '설계 프로젝트 : 이탈리아 대사관',
+		size: '66,350 sq ft',
+		duration: '2015. 01. 12 ~ 2015. 05. 03',
+		team: 'Bowen Victor Zhang',
+		synposis:
+			'미국의 대도시 보스턴에 이탈리아 대사관을 설계하는 건축 프로젝트입니다. 이 프로젝트의 주요 목표는 맥락적 조건을 고려하며 현대화된 이탈리아적 특징을 살려 시민 건축물을 설계했습니다.',
+		carousel: ['01', '02', '03', '04', '06', '07', '08', '09'],
+		urlToPDF:
+			'https://news.syr.edu/blog/2015/06/10/architecture-announces-end-of-year-awards-27724/',
+	},
+	{
+		title: 'Pan Am 103 Memorial Installation',
+		genre: '설치미술',
+		size: '25ft x 25ft x 25ft',
+		materials: '실, 와이어, 각재',
+		duration: '2013. 09 ~ 2013. 10',
+		team: 'Amber Bartosh, Julie Larsen, Richard Camastra and Benjamin Anderson-Nelson',
+		synposis:
+			'1988년 12월 21일, 팬 아메리칸 항공 103편 폭파 사건으로 35명의 학생이 목숨을 잃었습니다. 이 설치작품은 아트리움의 기둥을 실로 감싸 사후 세계로의 상승을 묘사해 학생들을 기립니다.',
+		carousel: ['01', '02', '03', '04', '05', '06'],
+		urlToPDF: 'https://news.syr.edu/blog/2013/10/17/a-delicate-web-of-remembrance-27677/',
+	},
 ];
