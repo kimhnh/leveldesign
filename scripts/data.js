@@ -52,6 +52,15 @@ export const projects = [
 			'https://news.syr.edu/blog/2015/06/10/architecture-announces-end-of-year-awards-27724/',
 	},
 	{
+		title: 'The Art of Display',
+		genre: '설치미술',
+		materials: 'MDF, 아크릴',
+		duration: '2014',
+		synposis:
+			'사람과 오브제의 관계를 연구한 프로젝트입니다. 의미와 의도는 자그마한 변화에서부터 바뀝니다.',
+		theme: '세 가지 테마를 통해 진행했습니다 : Frame(Threshold), Pedestal(Soapbox), Vitrine (Showcase).',
+	},
+	{
 		title: 'Pan Am 103 Memorial Installation',
 		genre: '설치미술',
 		size: '25ft x 25ft x 25ft',
