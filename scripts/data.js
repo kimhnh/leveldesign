@@ -22,7 +22,7 @@ export const projects = [
 	},
 	{
 		title: 'Ruinsback',
-		urlToVideo: 'ArX6tIpezLw',
+		urlToVideo: 'yDPVHiX6x1w',
 		genre: '오픈월드 ARPG',
 		size: '1400m x 1000m',
 		tools: 'Unreal 5, DCS, Blockout Tools Plugin',
