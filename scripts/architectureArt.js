@@ -66,7 +66,10 @@ const archArtMarkup = `
                         <p>
                             ${projects[displayProjectIndex].theme}
                         </p>
-                    </div>	
+                    </div>
+					<button class="project-pdf"><a href="${
+						projects[displayProjectIndex].urlToPDF
+					}" target="_blank">기획서 보기</a></button>
     </section>
     <div class="divider"></div>
     <section class="project project--margin" id="project-panam">

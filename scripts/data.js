@@ -58,7 +58,9 @@ export const projects = [
 		duration: '2014',
 		synposis:
 			'사람과 오브제의 관계를 연구한 프로젝트입니다. 의미와 의도는 자그마한 변화에서부터 바뀝니다.',
-		theme: '세 가지 테마를 통해 진행했습니다 : Frame(Threshold), Pedestal(Soapbox), Vitrine (Showcase).',
+		theme: '세 가지 테마를 통해 진행했습니다 : Frame(Threshold), Pedestal(Soapbox), Vitrine(Showcase).',
+		urlToPDF:
+			'https://drive.google.com/file/d/1CmO5itz-5myWYGsO3L6rKVaaPLS-MeJI/view?usp=drive_link',
 	},
 	{
 		title: 'Pan Am 103 Memorial Installation',

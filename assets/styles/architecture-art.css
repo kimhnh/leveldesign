@@ -64,6 +64,10 @@
 }
 
 #project-display p:last-child {
+	margin-bottom: 2rem;
+}
+
+#project-display .project-pdf {
 	margin: 0;
 }
 
