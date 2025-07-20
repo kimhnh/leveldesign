@@ -13,18 +13,22 @@ const archArtMarkup = `
                         <img class="" src="../assets/images/arch_consulate_cover.jpg" alt="" />
                     </div>
                     <h1 class="project-title">${projects[archProjectIndex].title}</h1>
+					<p class="project-synposis project-synposis__archart">${projects[archProjectIndex].synposis}</p>
                     <div class="project-description">
-                        <div class="project-description__wrapper" id="team">
-                            <h3><span>파트너</span> : ${projects[archProjectIndex].team}</h3>
-                        </div>
-                        <div class="project-description__wrapper">
-                            <h3><span>분류</span> : ${projects[archProjectIndex].genre}</h3>
-                            <h3><span>건축 면적</span> : ${projects[archProjectIndex].size}</h3>
-                            <h3><span>진행 기간</span> : ${projects[archProjectIndex].duration}</h3>
-                        </div>
-                        <p>
-                            ${projects[archProjectIndex].synposis}
-                        </p>
+						<aside class="project-description__aside aside__long" id="asideArchArt">
+							<div class="project-description__item">
+								<h3>파트너<span class="item-notes"> :&nbsp;${projects[archProjectIndex].team}</span></h3>
+							</div>
+							<div class="project-description__item">
+								<h3>분류<span class="item-notes"> :&nbsp;${projects[archProjectIndex].genre}</span></h3>
+							</div>
+							<div class="project-description__item">
+								<h3>건축 면적<span class="item-notes"> :&nbsp;${projects[archProjectIndex].size}</span></h3>
+							</div>
+							<div class="project-description__item">
+								<h3>진행 기간<span class="item-notes"> :&nbsp;${projects[archProjectIndex].duration}</span></h3>
+							</div>
+						</aside>
                     </div>
                     <button class="project-pdf"><a href="${
 						projects[archProjectIndex].urlToPDF
@@ -50,22 +54,21 @@ const archArtMarkup = `
                         <img class="" src="../assets/images/display_set_02.png" alt="" />
                     </div>
                     <h1 class="project-title">${projects[displayProjectIndex].title}</h1>
+					<p class="project-synposis project-synposis__archart">${projects[displayProjectIndex].synposis}</p>
                     <div class="project-description">
-                        <div class="project-description__wrapper">
-                            <h3><span>분류</span> : ${projects[displayProjectIndex].genre}</h3>
-                            <h3><span>사용한 자재</span> : ${
-								projects[displayProjectIndex].materials
-							}</h3>
-                            <h3><span>진행 기간</span> : ${
-								projects[displayProjectIndex].duration
-							}</h3>
-                        </div>
-                        <p>
-                            ${projects[displayProjectIndex].synposis}
-                        </p>
-                        <p>
-                            ${projects[displayProjectIndex].theme}
-                        </p>
+						<aside class="project-description__aside aside__long" id="asideArchArt">
+							<div class="project-description__item">
+								<h3>분류<span class="item-notes"> :&nbsp;${projects[displayProjectIndex].genre}</span></h3>
+							</div>
+							<div class="project-description__item">
+								<h3>사용한 자재<span class="item-notes"> :&nbsp;${
+									projects[displayProjectIndex].materials
+								}</span></h3>
+							</div>
+							<div class="project-description__item">
+								<h3>진행 기간<span class="item-notes"> :&nbsp;${projects[displayProjectIndex].duration}</span></h3>
+							</div>
+						</aside>
                     </div>
 					<button class="project-pdf"><a href="${
 						projects[displayProjectIndex].urlToPDF
@@ -78,21 +81,22 @@ const archArtMarkup = `
                         <img class="project__panam--second-img" src="../assets/images/art_panam_07.jpg" alt="" />
                     </div>
                     <h1 class="project-title">${projects[artProjectIndex].title}</h1>
+					<p class="project-synposis project-synposis__archart">${projects[artProjectIndex].synposis}</p>
                     <div class="project-description">
-                        <div class="project-description__wrapper" id="team">
-                            <h3><span>팀</span> : ${projects[artProjectIndex].team}</h3>
-                        </div>
-                        <div class="project-description__wrapper">
-                            <h3><span>분류</span> : ${projects[artProjectIndex].genre}</h3>
-                            <h3><span>크기</span> : ${projects[artProjectIndex].size}</h3>
-                            <h3><span>사용한 자재</span> : ${
-								projects[artProjectIndex].materials
-							}</h3>
-                            <h3><span>진행 기간</span> : ${projects[artProjectIndex].duration}</h3>
-                        </div>
-                        <p>
-                            ${projects[artProjectIndex].synposis}
-                        </p>
+						<aside class="project-description__aside aside__long" id="asideArchArt">
+							<div class="project-description__item">
+								<h3>팀<span class="item-notes"> :&nbsp;${projects[artProjectIndex].team}</span></h3>
+							</div>
+							<div class="project-description__item">
+								<h3>분류<span class="item-notes"> :&nbsp;${projects[artProjectIndex].genre}</span></h3>
+							</div>
+							<div class="project-description__item">
+								<h3>사용한 자재<span class="item-notes"> :&nbsp;${projects[artProjectIndex].materials}</span></h3>
+							</div>
+							<div class="project-description__item">
+								<h3>진행 기간<span class="item-notes"> :&nbsp;${projects[artProjectIndex].duration}</span></h3>
+							</div>
+						</aside>
                     </div>
                     <button class="project-pdf"><a href="${
 						projects[artProjectIndex].urlToPDF

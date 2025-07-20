@@ -1,3 +1,26 @@
+.project-synposis__archart {
+	font-style: normal;
+}
+
+.project-synposis__archart::before {
+	content: none;
+}
+
+.project-synposis__archart::after {
+	content: none;
+}
+
+#asideArchArt {
+	width: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+	#asideArchArt {
+		display: grid;
+		width: 100%;
+	}
+}
+
 .wrapper-arch-art {
 	width: 100%;
 	display: flex;
@@ -59,16 +82,8 @@
 }
 
 /* ILLUSIONS */
-#project-display p {
-	margin-bottom: 0;
-}
-
-#project-display p:last-child {
-	margin-bottom: 2rem;
-}
-
 #project-display .project-pdf {
-	margin: 0;
+	margin-bottom: 0;
 }
 
 /* PANAM */

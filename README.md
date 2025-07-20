@@ -11,7 +11,7 @@ A portfolio showcasing Soulslike ARPG (Action role-playing game) levels. Each le
 
 ## 🔗 Direct link to each project
 
-| Project Name | [Three Bridges](https://kimhnh.github.io/leveldesign/pages/threeBridges.html) | [Ruinsback](https://kimhnh.github.io/leveldesign/pages/ruinsBack.html) |
-| ------------ | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Genre        | ARPG                                                                          | Open world ARPG                                                        |
-| Size         | 270m x 150m                                                                   | 1400m x 1000m                                                          |
+| Project Name | [Three Bridges](https://kimhnh.github.io/leveldesign/pages/three-bridges.html) | [Ruinsback](https://kimhnh.github.io/leveldesign/pages/ruins-back.html) |
+| ------------ | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| Genre        | ARPG                                                                           | Open world ARPG                                                         |
+| Size         | 270m x 150m                                                                    | 1400m x 1000m                                                           |

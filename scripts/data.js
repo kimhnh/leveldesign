@@ -57,8 +57,7 @@ export const projects = [
 		materials: 'MDF, 아크릴',
 		duration: '2014',
 		synposis:
-			'사람과 오브제의 관계를 연구한 프로젝트입니다. 의미와 의도는 자그마한 변화에서부터 바뀝니다.',
-		theme: '세 가지 테마를 통해 진행했습니다 : Frame(Threshold), Pedestal(Soapbox), Vitrine(Showcase).',
+			'사람과 오브제의 관계를 연구한 프로젝트입니다. 의미와 의도는 자그마한 변화에서부터 바뀝니다. 세 가지 테마를 통해 진행했습니다 : Frame(Threshold), Pedestal(Soapbox), Vitrine(Showcase).',
 		urlToPDF:
 			'https://drive.google.com/file/d/1CmO5itz-5myWYGsO3L6rKVaaPLS-MeJI/view?usp=drive_link',
 	},
@@ -73,5 +72,8 @@ export const projects = [
 			'1988년 12월 21일, 팬 아메리칸 항공 103편 폭파 사건으로 35명의 학생이 목숨을 잃었습니다. 이 설치작품은 아트리움의 기둥을 실로 감싸 사후 세계로의 상승을 묘사해 학생들을 기립니다.',
 		carousel: ['01', '02', '03', '04', '05', '06'],
 		urlToPDF: 'https://news.syr.edu/blog/2013/10/17/a-delicate-web-of-remembrance-27677/',
+	},
+	{
+		urlToVideo: ['bzma0h0KpCc', '3NcjIA_3KI8', 'ghzYprvmtq4'],
 	},
 ];

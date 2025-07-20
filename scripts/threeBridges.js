@@ -12,34 +12,38 @@ const ARPGMarkup = `
 					}?&theme=dark&autohide=2&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 				<h1 class="project-title">${projects[projectIndex].title}</h1>
+				<p class="project-synposis">${projects[projectIndex].synposis}</p>
 				<div class="project-description">
-					<div class="project-description__wrapper">
-						<h3><span>장르</span> : ${projects[projectIndex].genre}</h3>
-						<h3><span>사이즈</span> : ${projects[projectIndex].size}</h3>
-						<h3><span>사용 툴</span> : ${projects[projectIndex].tools}</h3>
+					<aside class="project-description__aside">
+						<div class="project-description__item">
+							<h3>장르<span class="item-notes"> :&nbsp;${projects[projectIndex].genre}</span></h3>
+						</div>
+						<div class="project-description__item">
+							<h3>사이즈<span class="item-notes"> :&nbsp;${projects[projectIndex].size}</span></h3>
+						</div>
+						<div class="project-description__item">
+							<h3>사용 툴<span class="item-notes"> :&nbsp;${projects[projectIndex].tools}</span></h3>
+						</div>
+					</aside>
+					<div class="design">
+						<div class="design__intention--wrapper">
+							${projects[projectIndex].intentionsIcon
+								.map((el, i) => {
+									return `
+									<article class="design__intention">
+										<img src="${el}" alt="" />
+										<h3>${projects[projectIndex].intentions[i]}</h3>
+									</article>
+									`;
+								})
+								.join('')}
+						</div>
 					</div>
-					<p>
-						${projects[projectIndex].synposis}
-					</p>
 				</div>
 				<button class="project-pdf"><a href="${
 					projects[projectIndex].urlToPDF
 				}" target="_blank">기획서 보기</a></button>
-				<div class="design">
-					<h1 class="design__title">기획 의도</h1>
-					<div class="design__intention--wrapper">
-						${projects[projectIndex].intentionsIcon
-							.map((el, i) => {
-								return `
-								<article class="design__intention">
-									<img src="${el}" alt="" />
-									<h3>${projects[projectIndex].intentions[i]}</h3>
-								</article>
-								`;
-							})
-							.join('')}
-					</div>
-				</div>
+				
 				<div class="carousel">
 				${projects[projectIndex].carousel
 					.map((el) => {
